@@ -54,29 +54,9 @@ body {
   cursor: pointer;
 }
 
-.first-heading:hover .tooltip {
-  opacity: 1;
-}
-
 .first-heading--special {
   font-weight: 300;
   margin: 0 10px;
-}
-
-.tooltip {
-  position: absolute;
-  bottom: -55px;
-  right: 250px;
-  background-color: #4d545771;
-  color: white;
-  padding: 10px;
-  border-radius: 10px;
-  font-size: 20px;
-  text-transform: capitalize;
-  opacity: 0;
-  pointer-events: none;
-  text-wrap: nowrap;
-  transition: all 0.5s;
 }
 
 .container {
@@ -222,82 +202,56 @@ body {
     cursor: pointer;
   }
 
-  .first-heading:hover .tooltip {
-    opacity: 1;
-  }
-
   .first-heading--special {
     font-weight: 300;
     margin: 0 10px;
   }
-
-  .tooltip {
-    position: absolute;
-    bottom: -55px;
-    right: 180px;
-    background-color: #4d545771;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 20px;
-    text-transform: capitalize;
-    opacity: 0;
-    pointer-events: none;
-    text-wrap: nowrap;
-    transition: all 0.5s;
-  }
 }
 
-@media (max-width: 730px) {
+@media (max-width: 720px) {
   .logo {
-    width: 100px;
+    width: 80px;
     box-shadow: 0 0 10px black;
-    border-radius: 50%;
     margin-left: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    text-align: center;
   }
 
   .first-heading {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.92);
+    margin-top: 25px;
+    position: relative;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 590px) {
+  .first-heading {
+    display: inline-block;
     align-items: center;
     justify-content: center;
     font-size: 40px;
     letter-spacing: 5px;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.92);
-    margin-top: 50px;
     position: relative;
     cursor: pointer;
+    margin: 15px 10px;
   }
 
-  .first-heading:hover .tooltip {
-    opacity: 1;
+  .logo__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  .first-heading--special {
-    font-weight: 300;
-    margin: 0 10px;
-  }
-
-  .tooltip {
-    position: absolute;
-    bottom: -55px;
-    right: 0px;
-    background-color: #4d545771;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 20px;
-    text-transform: capitalize;
-    opacity: 0;
-    pointer-events: none;
-    text-wrap: nowrap;
-    transition: all 0.5s;
-  }
-}
-
-@media (max-width: 375px) {
   .logo {
     width: 80px;
     box-shadow: 0 0 10px black;
@@ -306,42 +260,8 @@ body {
     margin-bottom: 10px;
   }
 
-  .first-heading {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.92);
-    margin-top: 50px;
-    position: relative;
-    cursor: pointer;
-  }
-
-  .first-heading:hover .tooltip {
-    opacity: 1;
-  }
-
   .first-heading--special {
     font-weight: 300;
     margin: 0 10px;
-  }
-
-  .tooltip {
-    position: absolute;
-    bottom: -45px;
-    right: -30px;
-    background-color: #4d545771;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 15px;
-    text-transform: capitalize;
-    opacity: 0;
-    pointer-events: none;
-    text-wrap: nowrap;
-    transition: all 0.5s;
   }
 }
